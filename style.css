@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+
+  .slider {
+    height: 100%;
+    width: 100%;
+
+    .bg {
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .bg-image1 {
+      background-image: url("images/image1.png");
+    }
+
+    .bg-image2 {
+      background-image: url("images/image2.png");
+    }
+
+    .bg-image3 {
+      background-image: url("images/image3.png");
+    }
+
+    .slick-list {
+      height: 100%;
+      width: 100%;
+
+      .slick-track {
+        height: 100%;
+
+        .slick-slide {
+          width: 100%;
+        }
+      }
+    }
+
+    .slick-dots {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      bottom: 50px;
+      padding: 0;
+      width: 100%;
+      list-style: none;
+
+
+      button {
+        font-size: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: none;
+        background: #f8f1eab2;
+      }
+
+      .slick-active>button {
+        background-color: #F16A50;
+      }
+    }
+  }
+
+  .hero-title-container {
+    position: absolute;
+    inset: 120px 100px auto auto;
+    width: 400px;
+
+    .hero-title {
+      margin: 0;
+      font-size: 50px;
+      color: #F8F1EA;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 100%;
+    }
+
+    .hero-btn {
+      margin: 50px auto auto;
+      background-color: unset;
+      display: block;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 100%;
+      text-transform: uppercase;
+    }
+  }
+
+}
