@@ -15,18 +15,19 @@ body {
       background-size: cover;
       background-position: center;
       position: relative;
+      background-repeat: no-repeat;
     }
 
     .bg-image1 {
-      background-image: url("images/image1.png");
+      background-image: linear-gradient(#000000D6, #D9D9D900), url("images/image1.png");
     }
 
     .bg-image2 {
-      background-image: url("images/image2.png");
+      background-image: linear-gradient(#000000D6, #D9D9D900), url("images/image2.png");
     }
 
     .bg-image3 {
-      background-image: url("images/image3.png");
+      background-image: linear-gradient(#000000D6, #D9D9D900), url("images/image3.png");
     }
 
     .slick-list {
@@ -60,6 +61,7 @@ body {
         border-radius: 50%;
         border: none;
         background: #f8f1eab2;
+        cursor: pointer;
       }
 
       .slick-active>button {
@@ -85,13 +87,65 @@ body {
 
     .hero-btn {
       margin: 50px auto auto;
+      padding: 15px 57px;
       background-color: unset;
       display: block;
       font-size: 18px;
       font-weight: 500;
       line-height: 100%;
       text-transform: uppercase;
+      color: #FFFFFF;
+      border: 2px solid #F8F1EA;
+      transition: .5s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #F16A50;
+        border-color: #F16A50;
+      }
     }
   }
+}
 
+@media (max-width: 1024px) {
+  .hero .slider {
+
+    .slick-dots button {
+      width: 15px;
+      height: 15px;
+    }
+
+    .bg {
+      background-position: 20%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+
+    .hero-title-container {
+      position: relative;
+      inset: 120px auto;
+      margin: auto;
+    }
+
+    .slider .slick-dots button {
+      width: 10px;
+      height: 10px;
+    }
+
+    .hero-title-container .hero-title {
+      font-size: 36px;
+    }
+  }
+}
+
+
+
+
+@media (max-width: 420px) {
+  .hero .hero-title-container {
+    width: 300px;
+  }
 }
